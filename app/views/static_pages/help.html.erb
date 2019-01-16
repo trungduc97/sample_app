@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Help | Ruby on Rails Tutorial Sample App</title>
+  </head>
+  <body>
+    <h1>Help</h1>
+    <p>
+    <%= t ".help_app" %>
+      <link_to href="http://www.railstutorial.org/help">Rails Tutorial help
+      page</link_to>.
+      To get help on this sample app, see the
+      <link_to href="http://www.railstutorial.org/book"><em>Ruby on Rails
+      Tutorial</em> book</link_to>.
+    </p>
+  </body>
+  <%= link_to "English", locale:"en" %>
+  <%= link_to "Vietnamese", locale:"vi" %>
+</html>

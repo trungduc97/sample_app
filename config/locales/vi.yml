@@ -1,0 +1,8 @@
+vi:
+  static_pages:
+    home:
+      this: "Đây là trang chính cho"
+    help:
+      help_app: " Đây là trang trợ giúp"
+    about:
+      about_app: " Đây là hướng dẫn cho"

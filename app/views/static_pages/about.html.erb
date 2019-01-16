@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About | Ruby on Rails Tutorial Sample App</title>
+  </head>
+  <body>
+    <h1>About</h1>
+    <p>
+    <%= t ".about_app" %>
+      The <link to href="http://www.railstutorial.org/"><em>Ruby on Rails
+      Tutorial</em></link_to> is a
+      <link_to href="http://www.railstutorial.org/book">book</link_to> and
+      <link_to href="http://screencasts.railstutorial.org/">screencast series</link_to>
+      to teach web development with
+      <link_to href="http://rubyonrails.org/">Ruby on Rails</link_to>.
+      This is the sample application for the tutorial.
+    </p>
+  </body>
+  <%= link_to "English", locale:"en" %>
+  <%= link_to "Vietnamese", locale:"vi" %>
+</html>
