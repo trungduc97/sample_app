@@ -1,7 +1,7 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield :title %> | <%= t "ror_sampleapp" %></title>
+    <title>SampleApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,8 +10,6 @@
   </head>
 
   <body>
-    <%= link_to t("english"), locale: "en" %>
-    <%= link_to t("vietnam"), locale: "vi" %>
     <%= yield %>
   </body>
 </html>
