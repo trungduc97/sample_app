@@ -1,9 +1,13 @@
-<% provide :title, t(".about") %>
-<h1><%= t "about" %></h1>
+<% provide :title, t(".about_") %>
+<h1><%= t ".about" %></h1>
 <p>
-  <%= t ".content_html", 
-    link1: link_to("<em>Ruby on Rails Tutorial</em>".html_safe, "http://www.railstutorial.org/"), 
-    link2: link_to(t(".book"), "http://www.railstutorial.org/book"),
-    link3: link_to(t(".screencast_series"), "http://screencasts.railstutorial.org/"),
-    link4: link_to("Ruby on Rails", "http://rubyo nrails.org/") %>
+  <%= t ".the" %>
+  <%= link_to t("tutorial"),"http://www.railstutorial.org/" %>
+  <%= t ".is_a" %>
+  <%= link_to t(".book"), "http://www.railstutorial.org/book" %>
+  <%= t ".and" %>
+  <%= link_to t(".screencast"), "http://screencasts.railstutorial.org/" %>
+  <%= t ".teach" %>
+  <%= link_to t("ruby"),"http://rubyonrails.org/" %>
+  <%= t ".intro" %>
 </p>
