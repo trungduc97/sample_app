@@ -39,6 +39,7 @@ en:
   english: "English"
   vietnam: "Vietnamese"
   log_in: Log in
+  log_out: Log out
   by: "by"
   new: "New"
   home: "Home"
@@ -51,3 +52,10 @@ en:
   error_find_user: "user not found"
   form_con: "The form contains"
   error: "error"
+  account: "Account"
+  setting: "Setting"
+  danger: "Danger"
+  sign_up_now: "Sign up now!!!"
+  new_user: "New User"
+  pass: "Password"
+  remember: "Remember"
