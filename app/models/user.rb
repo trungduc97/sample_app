@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  attr_reader :remember_token
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   
   validates :email, presence: true,
@@ -25,5 +26,23 @@ class User < ApplicationRecord
              end
       BCrypt::Password.create(string, cost: cost)
     end
+  end
+
+  def new_token
+    SecureRandom.urlsafe_base64
+  end
+
+  def remember
+    self.remember_token = User.new_token
+    update remember_digest: User.digest(remember_token)
+  end
+
+  def authenticated? remember_token
+    return false unless remember_digest.present?
+    BCrypt::Password.new(remember_digest).is_password?(remember_token)
+  end
+
+  def forget
+    update remember_digest: nil
   end
 end
